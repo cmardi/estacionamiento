@@ -111,7 +111,7 @@ def main():
         moto = Motocicleta(placa="XYZ789", marca="Honda")
         estacionamiento.registrar_vehiculo(moto)
         tarifa_moto = estacionamiento.calcular_tarifa(moto, 2)
-        recibo_moto = Recibo(vehiculo=moto, tiempo=2, total=tarifa_moto)
+        recibo_moto = Recibo(vehiculo = moto, tiempo=2, total=tarifa_moto)
         print("\n", recibo_moto)
 
     except TiempoInvalidoError as e:
